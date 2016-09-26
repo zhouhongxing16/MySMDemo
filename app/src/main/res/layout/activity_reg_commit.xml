@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <RelativeLayout 
+       android:layout_height="40dp"
+       android:layout_width="fill_parent"
+       android:background="#65DF96" 
+       >
+  <ImageView
+      android:id="@+id/zhuce3_back"
+    android:layout_height="27dp"
+    android:layout_marginTop="5dp"
+       android:layout_width="37dp"
+        />
+      
+       
+   </RelativeLayout>
+    
+
+   
+    
+     <RelativeLayout 
+       android:layout_height="40dp"
+       android:layout_gravity="center"
+       android:layout_width="270dp"
+        android:layout_marginTop="15dp"
+       >
+  <TextView
+       android:id="@+id/bt_num"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="15dp"
+      android:text="接收验证码的手机号："
+      android:textColor="#9F9F97"
+      android:textSize="12dp" 
+      />
+
+   <TextView
+       android:id="@+id/et_phonenumber"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="10dp"
+       android:layout_alignParentBottom="true"
+       android:layout_toRightOf="@+id/bt_num"
+       android:textSize="10sp" />
+  
+  </RelativeLayout>
+    
+    
+    <TableRow 
+         android:id="@+id/bt_mess"
+         android:layout_gravity="center"
+           android:background="@drawable/et_number"
+        android:layout_width="270dp"
+        android:layout_height="45dp">
+   <EditText
+        android:id="@+id/et_number"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/yanzheng"
+        android:ems="10"
+        android:hint=" 验证码"
+        android:textSize="16dp" />
+
+  
+  <TextView 
+       android:id="@+id/bt_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+        android:text="|"
+        
+        android:textSize="16dp"
+        />
+
+  <Button
+      android:id="@+id/bt_sendsms"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:background="@drawable/yanzhenma"
+      android:text="  获取验证码"
+      android:textColor="#65DF96"
+      android:textSize="16dp" />
+  
+   
+    、</TableRow>
+    
+    <Button
+        android:id="@+id/bt_postmessage"
+         android:layout_gravity="center"
+        android:layout_width="270dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_backgrund"
+        android:text="验证信息"
+        android:textColor="@color/white" />
+</LinearLayout>

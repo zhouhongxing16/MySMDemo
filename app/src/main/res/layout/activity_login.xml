@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        android:background="#65DF96"
+        >
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_height="40dp"
+            android:layout_width="50dp"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_text_shadow"
+        android:drawableLeft="@drawable/login_people_head"
+        android:ems="10"
+        android:hint=" 请输入用户名"
+
+        android:textColorHint="@color/white"
+        android:textSize="15dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_text_shadow"
+        android:drawableLeft="@drawable/login_lock"
+        android:ems="10"
+        android:hint=" 请输入密码"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textSize="15dp" >
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view1"
+            android:drawableLeft="@drawable/login_gougou"
+            android:text="记住密码  "
+            android:textColor="#65DF96"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/zhuce"
+            android:text="/ 忘记密码      |"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/zhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48dp"
+            android:text="我要注册"
+            android:textColor="#65DF96"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_marginTop="15dp"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_button_backgrund"
+        android:text="登 录"
+        android:textColor="#FFFFFF"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="35dp" >
+
+        <TextView
+            android:id="@+id/view4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/view3"
+            android:drawableLeft="@drawable/login_weibo"
+            android:text="微博登录        |"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="71dp"
+            android:drawableLeft="@drawable/login_weixin"
+            android:text="微信登录 "
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
